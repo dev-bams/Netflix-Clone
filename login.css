@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* Set default styles for all elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body element */
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: black;
+    background-image: url('images/background.jpg');
+}
+
+/* Style the header element */
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border: none;
+}
+
+/* Style the navigation element */
+nav{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    justify-content: space-between;
+    padding-right: 23px;
+    align-items: center;
+}
+
+/* Style the left container within the navigation element */
+nav .left-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Style the image within the left container */
+.left-container img{
+    display: flex;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Style the language selection container within the right container */
+.language-container{
+    display: flex;
+    align-items: center;
+    border: 0.1px solid white;
+    border-radius: 5px;
+    height: 30px;
+    padding: 1rem;
+}
+
+/* Style the flag image within the language selection container */
+.language-container img{
+    display: flex;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 0.5rem;
+}
+
+/* Style the language selection dropdown within the language selection container */
+.language-container select{
+    background-color: transparent;
+    color: white;    
+    border: none;
+    width: 90px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Remove the default focus styles from the language selection dropdown */
+.language-container select:focus{
+    outline: none;
+}
+
+/* Style the options within the language selection dropdown */
+.language-container select option{
+    background-color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    max-width: 450px;
+    min-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.85);
+    border-radius: 6px;
+    padding: 2rem;
+    min-height: 60vh;
+}
+
+/*footer starts here*/
+footer{
+    margin-top: 3rem;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+    align-items: first baseline;
+    flex-wrap: wrap;
+}
+.top-footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.first-footer-container,
+.second-footer-container,
+.third-footer-container,
+.fourth-footer-container{
+    border-left: 1px solid white;
+    padding-left: 2rem;
+    flex-basis: 20%;
+    gap: 1rem;
+}
+.first-footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.first-footer-container img{
+    width: 80%;
+    text-align: left;
+}
+.first-footer-container p{
+    line-height: 1.5rem;
+}
+.first-footer-container p:first-of-type{
+    color: #C11119;
+}
+.first-footer-container a{
+    color: #C11119;
+    text-decoration: none;
+    border-bottom: 2px solid #C11119;
+    width: 100px;
+}
+.first-footer-container a:hover{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    width: 100px;
+}
+
+.second-footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.second-footer-container p:first-of-type{
+    color: #C11119;
+}
+.second-footer-container p{
+    line-height: 1.5rem;
+}
+.second-footer-container img{
+    margin-right: 0.7rem;
+    width: 20px;
+    height: 20px;
+}
+.second-footer-container a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+.second-footer-container a:hover{
+    color: #C11119;
+}
+.second-footer-container .specific-requirements-link{
+    color: #C11119;
+    text-decoration: none;
+    border-bottom: 2px solid #C11119;
+    width: 70px;
+}
+.specific-requirements-link:hover{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+.third-footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.third-footer-container p:first-of-type{
+    color: #C11119;
+}
+.third-footer-container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: none;
+}
+.third-footer-container a{
+    color: white;
+    text-decoration: none;
+}
+.third-footer-container a:hover{
+    color: #C11119;
+    text-decoration: none;
+}
+
+.fourth-footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.fourth-footer-container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.fourth-footer-container img:hover{
+    outline: 1.5px solid #C11119;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: #000;
+}
+.fourth-footer-container p:first-of-type{
+    color: #C11119;
+}
+.fourth-footer-container p{
+    line-height: 1rem;
+}
+.fourth-footer-bottom-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.fourth-footer-bottom-container a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+.fourth-footer-bottom-container a:hover{
+    color: #C11119;
+    text-decoration: none;
+}
+.fourth-footer-bottom-container img{
+    margin-right: 0.7rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 0%;
+}
+footer hr{
+    background-color: #f8f8ff;
+    width: 100%;
+    height: 2px;
+    border-color: grey;
+    margin-bottom: 2rem;
+}
+.bottom-footer-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+    width: 15%;
+    min-width: 210px;
+    margin: 0 auto;
+}
+.bottom-footer-container img{
+    width: 30px;
+    height: 30px;
+}
+.privacy{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 3rem;
+}
+.copyright{
+    margin: 2rem auto;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width:1000px){
+    .top-footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .first-footer-container,
+    .second-footer-container,
+    .third-footer-container,
+    .fourth-footer-container{
+        border-bottom: 1px solid white;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        flex-basis: 20%;
+        margin-bottom: 2rem;
+    }
+    footer hr{
+        display: none;
+    }
+    .copyright{
+        text-align: center;
+        margin-bottom: none;
+    }
+}
